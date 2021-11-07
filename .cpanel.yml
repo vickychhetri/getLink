@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/vikedise/getlink/
+    - /bin/cp -R * $DEPLOYPATH
