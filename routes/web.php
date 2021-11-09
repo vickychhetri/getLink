@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('Guest.Homepage');
 });
 
+Route::get('/About', function () {
+    return view('Guest.Aboutus');
+});
 Route::get('/Register', 'App\Http\Controllers\UserpagebaseController@index');
 Route::post('/Register', 'App\Http\Controllers\UserpagebaseController@store');
 
