@@ -6,7 +6,7 @@
                 <div class="about-text">
                     <small class="small-text">Welcome to <span class="mobile-block">Your's Social Connection + Portfolio
                             Website !</span></small>
-                    <h1 class="animated animated-text">
+                    <h2 class="animated animated-text">
                         <span class="mr-2">getlink.page/</span>
                         <div class="animated-info">
                             <span class="animated-item">pooja_raj</span>
@@ -14,7 +14,7 @@
                             <span class="animated-item">ayar</span>
 
                         </div>
-                    </h1>
+                    </h2>
 
                     <p>Building a successful web connection is a challenge. you will get link from us to manage your
                         portofolio and social connection.
