@@ -5,7 +5,7 @@
                   <div class="col-lg-11 text-center mx-auto col-12">
 
                       <div class="col-lg-8 mx-auto">
-                        <h2>Get Link of your Professional page from us | getLink.page/username</h2>
+                        <h2>Get Link for web page | getLink.page/username</h2>
                       </div>
 
                       <div class="owl-carousel owl-theme">
