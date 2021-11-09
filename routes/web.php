@@ -26,3 +26,7 @@ Route::post('/Register', 'App\Http\Controllers\UserpagebaseController@store');
 Route::get('/Login', 'App\Http\Controllers\Checklogin@index');
 Route::post('/Login', 'App\Http\Controllers\Checklogin@store');
 
+
+Route::get('/dashboard', function () {
+    return view('Admin.dashboard');
+});

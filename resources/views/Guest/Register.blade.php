@@ -38,11 +38,15 @@ span.req {
 <!-- MENU -->
 <x-User.Header.Menu />
 
-<div class="container">
+<div class="container-fluid" style="background: url(/images/img/17973908.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
     <div class="row">
         <div class="col-md-6">
             <!-- <h1 class="page-header">@user</h1> -->
-            <img src="/images/img/socialconnection.gif" style="max-width:100%;" />
+            <!-- <img src="/images/img/socialconnection.gif" style="max-width:100%;" /> -->
 
 
         </div>

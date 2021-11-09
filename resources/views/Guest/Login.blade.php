@@ -8,7 +8,7 @@
 <x-User.Header.Menu />
 
 
-<div class="container">
+<div class="container" style="margin-bottom: 9%;;">
     <div id="loginbox" style="margin-top: 50px;" class="mainbox col-lg-6 offset-md-3 col-md-8 offset-sm-2">
         <div class="card card-inverse card-info">
             <div class="card-header">
