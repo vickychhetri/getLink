@@ -38,12 +38,11 @@ span.req {
 <!-- MENU -->
 <x-User.Header.Menu />
 
-
 <div class="container">
     <div class="row">
     <div class="col-md-6">
             <h1 class="page-header">@user</h1>
-            <img src="/Images/img/socialconnection.gif"  style="max-width:100%;"/>
+            <img src="/images/img/socialconnection.gif"  style="max-width:100%;"/>
 
 
         </div>
