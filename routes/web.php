@@ -19,3 +19,7 @@ Route::get('/', function () {
 
 Route::get('/Register', 'App\Http\Controllers\UserpagebaseController@index');
 Route::post('/Register', 'App\Http\Controllers\UserpagebaseController@store');
+
+Route::get('/Login', 'App\Http\Controllers\Checklogin@index');
+Route::post('/Login', 'App\Http\Controllers\Checklogin@store');
+
