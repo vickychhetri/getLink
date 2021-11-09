@@ -21,8 +21,8 @@
                     </p>
 
                     <div class="custom-btn-group mt-4">
-                        <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Get Started</a>
-                        <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Login</a>
+                        <a href="/Register" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Get Started</a>
+                        <a href="/Login" class="btn custom-btn custom-btn-bg custom-btn-link">Login</a>
                     </div>
                 </div>
             </div>
