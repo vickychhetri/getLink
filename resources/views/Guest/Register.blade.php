@@ -41,7 +41,7 @@ span.req {
 <div class="container">
     <div class="row">
     <div class="col-md-6">
-            <h1 class="page-header">@user</h1>
+            <!-- <h1 class="page-header">@user</h1> -->
             <img src="/images/img/socialconnection.gif"  style="max-width:100%;"/>
 
 
