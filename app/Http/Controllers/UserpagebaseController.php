@@ -46,7 +46,7 @@ class UserpagebaseController extends Controller
             'lastname'=>'required',
             'email'=>'required|email',
             'username'=>'required|min:5', 
-            'pass1'=>'password',
+            'password'=>'required',
             // 'pass1'=>['required','string','min:9',             // must be at least 10 characters in length
             // 'regex:/[a-z]/',      // must contain at least one lowercase letter
             // 'regex:/[A-Z]/',      // must contain at least one uppercase letter
@@ -67,7 +67,8 @@ class UserpagebaseController extends Controller
     $database_agent->email=$request->email;
     $database_agent->username=$request->username;
     //Make Hash of password 
-    $hashedPassword = Hash::make($request->pass1);
+   //echo $request->password;
+    $hashedPassword = Hash::make($request->password);
     $database_agent->password= $hashedPassword;
     $database_agent->SAVE();
         } catch (QueryException $e) {    
