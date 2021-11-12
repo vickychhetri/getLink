@@ -7,7 +7,7 @@
 @endsection
 @section("container")
 
-<form method="post" action="/Admin/Add-New-Pages" enctype="multipart/form-data">
+<form method="post" action="/dashboard" enctype="multipart/form-data">
     {{csrf_field()}}
     <div class="row" style="padding:50px;">
         <h2> Section - Add Page</h2>
