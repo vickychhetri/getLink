@@ -17,7 +17,7 @@ Route::get('/noaccess', function () {
     Session()->forget('username');
     Session()->forget('password');
     Session()->flush();
-    return redirect("/adminLogin")->with('message', ' User is logged out !');
+    return redirect("/Login")->with('message', ' User is logged out !');
 });
 Route::get('/', function () {
     return view('Guest.Homepage');
