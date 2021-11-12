@@ -64,10 +64,6 @@ class PageController extends Controller
         $reDbms->content=$request->mytextarea;
         $newImageName= $pagenamenewafter.'-'.time().'.'.$request->thumbnailimage->extension();
         $reDbms->thumbnail =$newImageName;
-
-        //Sesion id :get | Hold Parent or session Information
-        $agent = new Usersession;
-        $reDbms->parentId = $agent->getSessionId();
         $res=$reDbms->save();
         if($res=="1"){
        $request->thumbnailimage->move(public_path('UserThumbImages'),$newImageName);
