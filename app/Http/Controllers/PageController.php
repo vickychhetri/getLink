@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Page;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-// use App\Http\Controllers\Agentsessionhandler;
+use App\Http\Controllers\Usersession;
 use Illuminate\Support\Facades\DB;
 class PageController extends Controller
 {
@@ -64,6 +64,10 @@ class PageController extends Controller
         $reDbms->content=$request->mytextarea;
         $newImageName= $pagenamenewafter.'-'.time().'.'.$request->thumbnailimage->extension();
         $reDbms->thumbnail =$newImageName;
+
+        //Sesion id :get | Hold Parent or session Information
+        $agent = new Usersession;
+        $reDbms->userId = $agent->getSessionId();
         $res=$reDbms->save();
         if($res=="1"){
        $request->thumbnailimage->move(public_path('UserThumbImages'),$newImageName);
