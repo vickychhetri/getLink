@@ -45,7 +45,7 @@ class UserpagebaseController extends Controller
             'firstname'=>'required',
             'lastname'=>'required',
             'email'=>'required|email',
-            'username'=>'required|min:5', 
+            'username'=>'required|min:5|unique:userpagebases', 
             'password'=>'required',
             // 'pass1'=>['required','string','min:9',             // must be at least 10 characters in length
             // 'regex:/[a-z]/',      // must contain at least one lowercase letter
