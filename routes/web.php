@@ -12,7 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Forgot or logout session 
+Route::get('/noaccess', function () {
+    Session()->forget('username');
+    Session()->forget('password');
+    Session()->flush();
+    return redirect("/adminLogin")->with('message', ' User is logged out !');
+});
 Route::get('/', function () {
     return view('Guest.Homepage');
 });
