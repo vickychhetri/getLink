@@ -251,8 +251,8 @@
                   <li class="user-header">
                     <img src="/Admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
-                      Alexander Pierce - Web Developer
-                      <small>Member since Nov. 2012</small>
+                    {{session()->get('firstname') }}  {{session()->get('lastname') }}
+                      <small> {{session()->get('created_at') }}</small>
                     </p>
                   </li>
                   <!-- Menu Body -->
@@ -261,7 +261,7 @@
                       <a href="#">Followers</a>
                     </div>
                     <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
+                      <a href="#">Following</a>
                     </div>
                     <div class="col-xs-4 text-center">
                       <a href="#">Friends</a>
@@ -275,7 +275,7 @@
                     <div class="pull-right">
                       <a href="/noaccess" class="btn btn-default btn-flat">Sign out</a>
                     </div>
-                  </li>
+                  </li> 
                 </ul>
               </li>
             </ul>
@@ -292,7 +292,7 @@
               <img src="/Admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p>Alexander Pierce</p>
+              <p>  {{session()->get('firstname') }}  {{session()->get('lastname') }}</p>
 
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
