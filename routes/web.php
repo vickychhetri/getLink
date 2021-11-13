@@ -42,5 +42,5 @@ Route::get('/dashboard', function () {
 // Route::get('/Admin/AddPage', 'App\Http\Controllers\PageController@index');
 Route::post('/dashboard', 'App\Http\Controllers\PageController@store');
 
-Route::post('/upload', 'App\Http\Controllers\UserpageController@upload');
+Route::post('/upload', 'App\Http\Controllers\PageController@upload');
 });
