@@ -85,7 +85,8 @@ class PageController extends Controller
 
 
      public function upload(Request $request){
-        $fileName=$request->file('file')->getClientOriginalName();
+        // $fileName=$request->file('file')->getClientOriginalName();
+        $fileName="edi".rand().'-'.time().'.'.$request->file('file')->extension();
         $path=$request->file('file')->storeAs('uploads', $fileName, 'public');
         return response()->json(['location'=>"/storage/$path"]); 
         
