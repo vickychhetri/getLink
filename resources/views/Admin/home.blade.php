@@ -18,102 +18,81 @@
                 {{ session('message') }}
             </div>
             @endif
-            <table class="table">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 
-                <tr>
-                    <td>
-                        <p> Page Types </p>
-                        <select name="pagetypestoCreate" class="form-control">
-                            <option value="1">Main Page</option>
+                <p> Page Types </p>
+                <select name="pagetypestoCreate" class="form-control">
+                    <option value="1">Main Page</option>
 
 
-                        </select>
+                </select>
 
-                        <span style="color:red;">
-                            @error('pagetypestoCreate')
-                            {{$message}}
-                            @enderror
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p> Title </p>
-                        <input type="text" name="title" class="form-control" />
-                        <span style="color:red;">
-                            @error('title')
-                            {{$message}}
-                            @enderror
-                        </span>
-                    </td>
-                </tr>
+                <span style="color:red;">
+                    @error('pagetypestoCreate')
+                    {{$message}}
+                    @enderror
+                </span>
+            </div>
 
-                <tr>
-                    <td>
-                        <p> Keywords </p>
-                        <div class="form-group">
-                            <label for="tags" class="control-label col-lg-4">Tags</label>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <p> Title </p>
+                <input type="text" name="title" class="form-control" />
+                <span style="color:red;">
+                    @error('title')
+                    {{$message}}
+                    @enderror
+                </span>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <p> Keywords </p>
+                <div class="form-group">
+                    <label for="tags" class="control-label col-lg-4">Tags</label>
 
-                            <div class="col-lg-8">
-                                <input name="tags" id="tags" value="get,link,page,web" class="form-control" />
-                            </div>
-                        </div>
+                    <div class="col-lg-8">
+                        <input name="tags" id="tags" value="get,link,page,web" class="form-control" />
+                    </div>
+                </div>
 
-                        <span style="color:red;">
-                            @error('tags')
-                            {{$message}}
-                            @enderror
-                        </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <p> Image </p>
-                        <input type="file" name="thumbnailimage" class="form-control" />
-                        <span style="color:red;">
-                            @error('thumbnailimage')
-                            {{$message}}
-                            @enderror
-                        </span>
-                    </td>
-                </tr>
+                <span style="color:red;">
+                    @error('tags')
+                    {{$message}}
+                    @enderror
+                </span>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <p> Image </p>
+                <input type="file" name="thumbnailimage" class="form-control" />
+                <span style="color:red;">
+                    @error('thumbnailimage')
+                    {{$message}}
+                    @enderror
+                </span>
+            </div>
 
 
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <p> Description (for website and search engine description ) </p>
+                <textarea name="shortdescription" class="form-control" style="height:100px;"></textarea>
+                <span style="color:red;">
+                    @error('shortdescription')
+                    {{$message}}
+                    @enderror
+                </span>
+            </div>
 
-                <tr>
-                    <td>
-                        <p> Description (for website and search engine description ) </p>
-                        <textarea name="shortdescription" class="form-control" style="height:100px;"></textarea>
-                        <span style="color:red;">
-                            @error('shortdescription')
-                            {{$message}}
-                            @enderror
-                        </span>
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td>
-                        <p> Content</p>
-                        <textarea id="mytextareaboxadminsection" name="mytextarea" class="form-control"
-                            style="height:500px;"></textarea>
-                        <span style="color:red;">
-                            @error('mytextarea')
-                            {{$message}}
-                            @enderror
-                        </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <input type="submit" class="btn btn-success btn-block" value="Submit" />
-                    </td>
-                </tr>
-
-            </table>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <p> Content</p>
+                <textarea id="mytextareaboxadminsection" name="mytextarea" class="form-control"
+                    style="height:500px;"></textarea>
+                <span style="color:red;">
+                    @error('mytextarea')
+                    {{$message}}
+                    @enderror
+                </span>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <input type="submit" class="btn btn-success btn-block" value="Submit" />
+            </div>
         </div>
     </div>
 </form>
