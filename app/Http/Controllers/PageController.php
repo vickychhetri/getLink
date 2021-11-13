@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Usersession;
 use Illuminate\Support\Facades\DB;
+use App\Models\Imagecollection;
 class PageController extends Controller
 {
     /**
@@ -83,11 +84,18 @@ class PageController extends Controller
         return $slug;
      }
 
-
      public function upload(Request $request){
         // $fileName=$request->file('file')->getClientOriginalName();
         $fileName="edi".rand().'-'.time().'.'.$request->file('file')->extension();
         $path=$request->file('file')->storeAs('uploads', $fileName, 'public');
+        if($path){
+            $agent = new Usersession;
+            $userID = $agent->getSessionId();   
+            $reDbms= new Imagecollection;
+            $reDbms->images=$path;
+            $reDbms->userId = $userID;
+            $reDbms->SAVE();
+        }
         return response()->json(['location'=>"/storage/$path"]); 
         
         /*$imgpath = request()->file('file')->store('uploads', 'public'); 
