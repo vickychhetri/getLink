@@ -14,9 +14,7 @@ class Pagemain extends Controller
         ->join('userpagebases', 'pages.userId', '=', 'userpagebases.id')
         ->select('pages.*', 'userpagebases.firstName','userpagebases.lastName','userpagebases.mobile','userpagebases.userName')
         ->where('userpagebases.userName', '=', $username)
-        ->get()
-        ->first();
-  
+        ->get();
         return view('template.username')
         ->with('pageData',$usernamePage);
         
