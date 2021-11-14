@@ -6,10 +6,10 @@
 
 @endsection
 @section("container")
-{{csrf_field()}}
-    @if(isset($data))    
-<form method="post" action="/dashboard" enctype="multipart/form-data">
 
+    @if(isset($data)) 
+<form method="post" action="/Edashboard" enctype="multipart/form-data">
+{{csrf_field()}}
 <div class="row" style="padding-top:50px;">
     <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 
@@ -99,7 +99,7 @@
     @else 
 
     <form method="post" action="/dashboard" enctype="multipart/form-data">
-
+    {{csrf_field()}}
 <div class="row" style="padding-top:50px;">
     <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 

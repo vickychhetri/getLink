@@ -36,6 +36,7 @@ Route::post('/Login', 'App\Http\Controllers\Checklogin@StartSessionLogin');
 Route::group(["middleware" => ["UserLogChecker"]], function(){
 Route::get('/dashboard', 'App\Http\Controllers\PageController@index');
 Route::post('/dashboard', 'App\Http\Controllers\PageController@store');
+Route::post('/Edashboard', 'App\Http\Controllers\PageController@update');
 Route::post('/upload', 'App\Http\Controllers\PageController@upload');
 });
 
