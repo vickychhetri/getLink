@@ -81,7 +81,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <p> Content</p>
             <textarea id="mytextareaboxadminsection" name="mytextarea" class="form-control"
-                style="height:500px;">{{$data->content}}</textarea>
+                style="height:500px;">{{!! html_entity_decode($data->content) !!}}</textarea>
             <span style="color:red;">
                 @error('mytextarea')
                 {{$message}}
