@@ -202,8 +202,8 @@ tinymce.init({
     tinycomments_mode: 'embedded',
     tinycomments_author: 'Author name',
     image_class_list: [{
-        title: 'img-responsive',
-        value: 'img-responsive'
+        title: 'img-fluid',
+        value: 'img-fluid'
     }, ],
     height: 500,
     setup: function(editor) {
