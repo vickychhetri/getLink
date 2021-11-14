@@ -22,11 +22,11 @@ class PageController extends Controller
         $reDbms= Page::where('userId','=',$userID)->get()->first();
         if($reDbms){
           echo "exist";
-            // return view('Admin.home')
-            // >with('data',$reDbms);
+             return view('Admin.home')
+                ->with('data',$reDbms);
         }else {
             echo "not";
-            // return view('Admin.home');
+            return view('Admin.home');
         }
         
     }
