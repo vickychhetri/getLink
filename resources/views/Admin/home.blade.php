@@ -35,6 +35,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <p> Title </p>
             <input type="text" name="title" class="form-control" value="{{$data->title}}"/>
+            <input type="hidden" name="id" class="form-control" value="{{$data->id}}"/>
             <span style="color:red;">
                 @error('title')
                 {{$message}}

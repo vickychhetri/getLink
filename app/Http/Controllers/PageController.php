@@ -143,7 +143,40 @@ class PageController extends Controller
      */
     public function update(Request $request, Page $page)
     {
-        //
+        $request->validate([
+            'id'=>'required',
+            'title'=>'required',
+            'thumbnailimage'=>'mimes:png,jpg,jpeg,PNG,JPG,JPEG|max:2048',
+            'pagetypestoCreate'=>'required',
+            'tags'=>'required',
+            'shortdescription'=>'required',
+            'mytextarea'=>'required',
+        ]);
+      
+        $postCat=1;
+        if($request->pagetypestoCreate!=null){
+            $postCat=$request->pagetypestoCreate;
+        }
+        $reDbms=Page::find($request->id);;
+        
+        $reDbms->title=$request->title;
+        $reDbms->visible=1;
+        $reDbms->keywords=$request->tags;
+        $reDbms->typePage=$postCat;
+        
+        $reDbms->description=$request->shortdescription;
+        $reDbms->content=$request->mytextarea;
+
+        //Sesion id :get | Hold Parent or session Information
+        $agent = new Usersession;
+        $reDbms->userId = $agent->getSessionId();
+        $res=$reDbms->save();
+        if($res=="1"){
+       return redirect()->back()->with('message','Completed !');     
+    }    
+          else {
+            return redirect()->back()->with('Error','Sorry Somehing bad Happen !');
+          }
     }
 
     /**
