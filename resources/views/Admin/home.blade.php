@@ -204,6 +204,9 @@ tinymce.init({
     image_class_list: [{
         title: 'img-fluid',
         value: 'img-fluid'
+    },{
+        title: 'mx-auto',
+        value: 'mx-auto'
     }, ],
     height: 500,
     setup: function(editor) {
