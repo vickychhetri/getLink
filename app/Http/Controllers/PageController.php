@@ -21,10 +21,12 @@ class PageController extends Controller
         $userID = $agent->getSessionId();   
         $reDbms= Page::where('userId','=',$userID)->get()->first();
         if($reDbms){
-            return view('Admin.home')
-            >with('data',$reDbms);
+          echo "exist";
+            // return view('Admin.home')
+            // >with('data',$reDbms);
         }else {
-            return view('Admin.home');
+            echo "not";
+            // return view('Admin.home');
         }
         
     }
