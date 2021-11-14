@@ -44,3 +44,5 @@ Route::post('/dashboard', 'App\Http\Controllers\PageController@store');
 
 Route::post('/upload', 'App\Http\Controllers\PageController@upload');
 });
+
+Route::get('/{pagename}','App\Http\Controllers\Pagemain@show');
