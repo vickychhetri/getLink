@@ -34,14 +34,8 @@ Route::post('/Login', 'App\Http\Controllers\Checklogin@StartSessionLogin');
 
 //club 
 Route::group(["middleware" => ["UserLogChecker"]], function(){
-
-Route::get('/dashboard', function () {
-    return view('Admin.home');
-});
-
-// Route::get('/Admin/AddPage', 'App\Http\Controllers\PageController@index');
+Route::get('/dashboard', 'App\Http\Controllers\PageController@index');
 Route::post('/dashboard', 'App\Http\Controllers\PageController@store');
-
 Route::post('/upload', 'App\Http\Controllers\PageController@upload');
 });
 

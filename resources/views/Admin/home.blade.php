@@ -6,9 +6,11 @@
 
 @endsection
 @section("container")
-
 <form method="post" action="/dashboard" enctype="multipart/form-data">
     {{csrf_field()}}
+    @if(isset($data))
+    {{$data}}
+    @endif
     <div class="row" style="padding-top:50px;">
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 
@@ -23,10 +25,7 @@
                 <p> Page Types </p>
                 <select name="pagetypestoCreate" class="form-control">
                     <option value="1">Main Page</option>
-
-
                 </select>
-
                 <span style="color:red;">
                     @error('pagetypestoCreate')
                     {{$message}}

@@ -17,7 +17,16 @@ class PageController extends Controller
      */
     public function index()
     {
-        //
+        $agent = new Usersession;
+        $userID = $agent->getSessionId();   
+        $reDbms= Page::where('userId','=',$userID)->get()->first();
+        if($reDbms){
+            return view('Admin.home')
+            >with('data',$reDbms);
+        }else {
+            return view('Admin.home');
+        }
+        
     }
 
     /**
