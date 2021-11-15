@@ -1,6 +1,32 @@
 @extends('template.customePage')
-@section('title','username')
+@section('title',$pageData[0]->title)
 @section('metaheadercontainer')
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="{{$pageData[0]->content}}">
+<meta name="description" content="{{$pageData[0]->description}}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://getlink.page/{{$pageData[0]->userName}}">
+<meta property="og:title" content="{{$pageData[0]->title}}">
+<meta property="og:description" content="{{$pageData[0]->description}}">
+<meta property="og:image" content="https://getlink.page/UserThumbImages/{{$pageData[0]->thumbnail}}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://getlink.page/vickychhetri">
+<meta property="twitter:title" content="{{$pageData[0]->title}}">
+<meta property="twitter:description" content="{{$pageData[0]->description}}">
+<meta property="twitter:image" content="https://getlink.page/UserThumbImages/{{$pageData[0]->thumbnail}}">
+
+<meta name="keywords" content="{{$pageData[0]->keywords}}">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+<meta name="author" content="{{$pageData[0]->firstName}} {{$pageData[0]->lastName}}">
+<meta name="og:phone_number" content="{{$pageData[0]->mobile}}"/>
 @endsection
 
 @section('container')
