@@ -1,7 +1,6 @@
 @extends('template.customePage')
 @section('title',$pageData[0]->title)
-@section('metaheadercontainer')
-
+@section('metaContainer')
 <!-- Primary Meta Tags -->
 <meta name="title" content="{{$pageData[0]->content}}">
 <meta name="description" content="{{$pageData[0]->description}}">
