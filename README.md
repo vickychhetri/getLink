@@ -1,6 +1,4 @@
-## About Laravel
-
-GetLink.Page
+## About GetLink.Page
 
 Welcome to getlink.page, your number one source for Bio Link or web link. We're dedicated to giving you the very best of Service and uptime, with a focus on User Experience, Reliability & Usability.
 
