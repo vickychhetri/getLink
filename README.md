@@ -1,7 +1,7 @@
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 GetLink.Page
+
 Welcome to getlink.page, your number one source for Bio Link or web link. We're dedicated to giving you the very best of Service and uptime, with a focus on User Experience, Reliability & Usability.
 
 Founded in 2021 by Vicky Chhetri, getlink.page has been started recently after lockdown. When Vicky Chhetri first started out, his passion for web development drove them to do research, so that he can offer you the world's class service via web. We now serve customers all over the world, and are thrilled that we're able to turn our passion into this platform.
