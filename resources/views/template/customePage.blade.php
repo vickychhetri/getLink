@@ -18,7 +18,15 @@
     <link rel="stylesheet" href="/css/tooplate-style.css">
     @section("metaContainer")
     @show
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QMGC9E0BXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-QMGC9E0BXM');
+</script>
 </head>
 
 <body>
