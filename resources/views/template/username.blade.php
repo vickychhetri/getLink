@@ -26,7 +26,8 @@
 <meta name="revisit-after" content="7 days">
 <meta name="author" content="{{$pageData[0]->firstName}} {{$pageData[0]->lastName}}">
 <meta name="og:phone_number" content="{{$pageData[0]->mobile}}"/>
-@if(isset($headers)) 
+@if(isset($headers))
+{{$headers}} 
 {!! html_entity_decode($headers->headerScript) !!}
 @endif
 @endsection
