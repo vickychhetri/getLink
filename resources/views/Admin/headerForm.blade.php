@@ -23,7 +23,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <p> Header</p>
             <textarea id="mytextareaboxadminsection" name="headerfiles" class="form-control"
-                style="height:500px;">{{$data->content}}</textarea>
+                style="height:500px;">{{$data->headerScript}}</textarea>
             <span style="color:red;">
                 @error('mytextarea')
                 {{$message}}
@@ -34,7 +34,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <p> Footer</p>
             <textarea id="mytextareaboxadminsection" name="footerfiles" class="form-control"
-                style="height:500px;">{{$data->content}}</textarea>
+                style="height:500px;">{{$data->footerScript}}</textarea>
             <span style="color:red;">
                 @error('mytextarea')
                 {{$message}}
