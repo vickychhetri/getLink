@@ -16,8 +16,7 @@ class Pagemain extends Controller
             ->join('userpagebases', 'headerfiles.userId', '=', 'userpagebases.id')
             ->select('headerfiles.*')
             ->where('userpagebases.userName', '=', $username)
-            ->get()
-            ->first();
+            ->get();
             echo $HFScrpts;
         $usernamePage = DB::table('pages')
         ->join('userpagebases', 'pages.userId', '=', 'userpagebases.id')
