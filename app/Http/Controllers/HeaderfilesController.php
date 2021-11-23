@@ -14,7 +14,7 @@ class HeaderfilesController extends Controller
      */
     public function index()
     {
-        //
+     return view('Admin.headerForm');   
     }
 
     /**
