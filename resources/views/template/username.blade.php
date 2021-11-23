@@ -28,7 +28,7 @@
 <meta name="og:phone_number" content="{{$pageData[0]->mobile}}"/>
 @if(isset($headers))
 {{$headers}} 
-{!! html_entity_decode($headers->headerScript) !!}
+{!! html_entity_decode($headers[0]->headerScript) !!}
 @endif
 @endsection
 
@@ -43,6 +43,6 @@
 @endsection
 @section('footerScript')
 @if(isset($headers)) 
-{!! html_entity_decode($headers->footerScript) !!}
+{!! html_entity_decode($headers[0]->footerScript) !!}
 @endif
 @endsection
