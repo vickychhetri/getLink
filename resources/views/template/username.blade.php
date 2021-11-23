@@ -27,8 +27,7 @@
 <meta name="author" content="{{$pageData[0]->firstName}} {{$pageData[0]->lastName}}">
 <meta name="og:phone_number" content="{{$pageData[0]->mobile}}"/>
 @if(isset($headers))
-{{$headers}} 
-{!! html_entity_decode($headers[0]->headerScript) !!}
+{{$headers[0]->headerScript}}
 @endif
 @endsection
 
@@ -41,8 +40,11 @@
     </div>
 </div>
 @endsection
+
 @section('footerScript')
+
 @if(isset($headers)) 
-{!! html_entity_decode($headers[0]->footerScript) !!}
+{{$headers[0]->footerScript}}
 @endif
+
 @endsection
