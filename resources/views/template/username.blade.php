@@ -26,9 +26,9 @@
 <meta name="revisit-after" content="7 days">
 <meta name="author" content="{{$pageData[0]->firstName}} {{$pageData[0]->lastName}}">
 <meta name="og:phone_number" content="{{$pageData[0]->mobile}}"/>
-
-{!! html_entity_decode(headers->headerScript) !!}
-
+@if(isset($headers)) 
+{!! html_entity_decode($headers->headerScript) !!}
+@endif
 @endsection
 
 @section('container')
@@ -41,7 +41,7 @@
 </div>
 @endsection
 @section('footerScript')
-
-{!! html_entity_decode(headers->footerScript) !!}
-
+@if(isset($headers)) 
+{!! html_entity_decode($headers->footerScript) !!}
+@endif
 @endsection
