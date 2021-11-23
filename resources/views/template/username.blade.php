@@ -28,7 +28,7 @@
 <meta name="og:phone_number" content="{{$pageData[0]->mobile}}"/>
  
 @if(isset($headers))
-{{$headers[0]->headerScript}}
+{!! $headers[0]->headerScript !!}
 @endif
 @endsection
 
