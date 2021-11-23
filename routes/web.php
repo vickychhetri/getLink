@@ -40,6 +40,8 @@ Route::post('/Edashboard', 'App\Http\Controllers\PageController@update');
 Route::post('/upload', 'App\Http\Controllers\PageController@upload');
 
 Route::get('/headerScript', 'App\Http\Controllers\HeaderfilesController@index');
+Route::post('/headerScript', 'App\Http\Controllers\HeaderfilesController@store');
+Route::post('/EheaderScript', 'App\Http\Controllers\HeaderfilesController@update');
 
 
 });

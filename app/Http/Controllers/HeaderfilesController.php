@@ -35,7 +35,28 @@ class HeaderfilesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'headerfiles'=>'required',
+            'footerfiles'=>'required',
+        ]);
+      
+         
+        $reDbms=new Headerfiles;        
+        $reDbms->headerScript=$request->headerfiles;
+        $reDbms->footerScript=$request->footerfiles;
+        $reDbms->pageId=Pagemain::userPageId();
+        
+        //Sesion id :get | Hold Parent or session Information
+        $agent = new Usersession;
+        $reDbms->userId = $agent->getSessionId();
+        $res=$reDbms->save();
+
+        if($res=="1"){
+       return redirect()->back()->with('message','Completed !');     
+    }    
+          else {
+            return redirect()->back()->with('Error','Sorry Somehing bad Happen !');
+          }
     }
 
     /**

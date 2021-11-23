@@ -23,6 +23,25 @@ class Pagemain extends Controller
     }
 
     }
+
+
+    public static function userPageId(){
+        try {
+              //Sesion id :get | Hold Parent or session Information
+            $agent = new Usersession;
+            $userID= $agent->getSessionId();
+            
+            $usernamePage = DB::table('pages')
+            ->where('userId', '=', $userID)
+            ->get()
+            ->first();
+            return  $usernamePage->id;
+            
+        }catch(Exception $e){
+    
+        }
+
+    } 
  
 
 
