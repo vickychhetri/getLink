@@ -138,6 +138,12 @@
               </a>
            
             </li>
+            <li class="active">
+              <a href="/headerScript">
+                <i class="fa fa-dashboard"></i> <span> Header & Footer </span></i>
+              </a>
+           
+            </li>
 <!--             
             <li class="treeview">
               <a href="#">
