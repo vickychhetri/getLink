@@ -45,7 +45,7 @@
 @section('footerScript')
 
 @if(isset($headers)) 
-{{$headers[0]->footerScript}}
+{!!$headers[0]->footerScript!!}
 @endif
 
 @endsection
