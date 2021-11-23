@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+use App\Models\Headerfiles;
 use Illuminate\Support\Facades\DB;
 use Exception;
 class Pagemain extends Controller
@@ -10,13 +12,17 @@ class Pagemain extends Controller
      public function show($username)
     {
         try {
+   //Sesion id :get | Hold Parent or session Information
+            $agent = new Usersession;
+            $HFScrpts=Headerfiles::where('userId','=',$agent->getSessionId())->get()->first();
         $usernamePage = DB::table('pages')
         ->join('userpagebases', 'pages.userId', '=', 'userpagebases.id')
         ->select('pages.*', 'userpagebases.firstName','userpagebases.lastName','userpagebases.mobile','userpagebases.userName')
         ->where('userpagebases.userName', '=', $username)
         ->get();
         return view('template.username')
-        ->with('pageData',$usernamePage);
+        ->with('pageData',$usernamePage)
+        ->with('$headers',$HFScrpts);
         
     }catch(Exception $e){
 
