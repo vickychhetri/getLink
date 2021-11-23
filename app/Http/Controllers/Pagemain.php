@@ -18,16 +18,15 @@ class Pagemain extends Controller
             ->where('userpagebases.userName', '=', $username)
             ->get()
             ->first();
-
-
+            echo $HFScrpts;
         $usernamePage = DB::table('pages')
         ->join('userpagebases', 'pages.userId', '=', 'userpagebases.id')
         ->select('pages.*', 'userpagebases.firstName','userpagebases.lastName','userpagebases.mobile','userpagebases.userName')
         ->where('userpagebases.userName', '=', $username)
         ->get();
-        return view('template.username')
-        ->with('pageData',$usernamePage)
-        ->with('$headers',$HFScrpts);
+        // return view('template.username')
+        // ->with('pageData',$usernamePage)
+        // ->with('$headers',$HFScrpts);
         
     }catch(Exception $e){
 
