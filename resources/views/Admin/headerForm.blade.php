@@ -65,7 +65,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <p> Header Scripts</p>
             <textarea id="mytextareaboxadminsection" name="headerfiles" class="form-control"
-                style="height:500px;"></textarea>
+                style="height: 200px;"></textarea>
             <span style="color:red;">
                 @error('mytextarea')
                 {{$message}}
@@ -76,7 +76,7 @@
                  <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <p> Footer Scripts </p>
             <textarea id="mytextareaboxadminsection" name="footerfiles" class="form-control"
-                style="height:500px;"></textarea>
+                style="height:200px;"></textarea>
             <span style="color:red;">
                 @error('mytextarea')
                 {{$message}}
