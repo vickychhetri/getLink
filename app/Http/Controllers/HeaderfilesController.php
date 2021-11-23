@@ -101,7 +101,22 @@ class HeaderfilesController extends Controller
      */
     public function update(Request $request, Headerfiles $headerfiles)
     {
-        //
+        $request->validate([
+            'headerfiles'=>'required',
+            'footerfiles'=>'required',
+        ]);
+         
+        $reDbms=Headerfiles::find($request->id);        
+        $reDbms->headerScript=$request->headerfiles;
+        $reDbms->footerScript=$request->footerfiles;
+        $res=$reDbms->save();
+
+        if($res=="1"){
+       return redirect()->back()->with('message','Completed !');     
+    }    
+          else {
+            return redirect()->back()->with('Error','Sorry Somehing bad Happen !');
+          }
     }
 
     /**

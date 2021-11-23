@@ -23,6 +23,7 @@
  
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <p> Header</p>
+            <input type="hidden" name="id" value="{{$data->id}}"/>
             <textarea id="mytextareaboxadminsection" name="headerfiles" class="form-control"
                 style="height:500px;">{{$data->headerScript}}</textarea>
             <span style="color:red;">
