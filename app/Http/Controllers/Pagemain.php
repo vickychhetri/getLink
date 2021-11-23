@@ -25,7 +25,7 @@ class Pagemain extends Controller
         ->get();
         return view('template.username')
         ->with('pageData',$usernamePage)
-        ->with('$headers',$HFScrpts);
+        ->with('headers',$HFScrpts);
         
     }catch(Exception $e){
 
