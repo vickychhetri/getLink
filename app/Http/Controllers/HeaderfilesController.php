@@ -14,7 +14,18 @@ class HeaderfilesController extends Controller
      */
     public function index()
     {
-     return view('Admin.headerForm');   
+
+        $agent = new Usersession;
+        $userID = $agent->getSessionId();   
+        $reDbms= Headerfiles::where('userId','=',$userID)->get()->first();
+        if($reDbms){
+             return view('Admin.headerForm')
+                ->with('data',$reDbms);
+        }else {
+            return view('Admin.headerForm');   
+        }
+
+   
     }
 
     /**
