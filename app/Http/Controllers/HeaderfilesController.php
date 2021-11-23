@@ -19,10 +19,11 @@ class HeaderfilesController extends Controller
         $userID = $agent->getSessionId();   
         $reDbms= Headerfiles::where('userId','=',$userID)->get()->first();
         if($reDbms){
-             return view('Admin.headerForm')
-                ->with('data',$reDbms);
+            echo $reDbms;
+            //  return view('Admin.headerForm')
+                // ->with('data',$reDbms);
         }else {
-            return view('Admin.headerForm');   
+            // return view('Admin.headerForm');   
         }
 
    
