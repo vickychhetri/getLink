@@ -8,6 +8,7 @@
 @section("container")
 
     @if(isset($data)) 
+    {{$data}}
 <form method="post" action="/EheaderScript" enctype="multipart/form-data">
 {{csrf_field()}}
 <div class="row" style="padding-top:50px;">
