@@ -12,9 +12,14 @@ class Pagemain extends Controller
      public function show($username)
     {
         try {
-   //Sesion id :get | Hold Parent or session Information
-            $agent = new Usersession;
-            $HFScrpts=Headerfiles::where('userId','=',$agent->getSessionId())->get()->first();
+            $HFScrpts= DB::table('headerfiles')
+            ->join('userpagebases', 'headerfiles.userId', '=', 'userpagebases.id')
+            ->select('headerfiles.*')
+            ->where('userpagebases.userName', '=', $username)
+            ->get()
+            ->first();
+
+
         $usernamePage = DB::table('pages')
         ->join('userpagebases', 'pages.userId', '=', 'userpagebases.id')
         ->select('pages.*', 'userpagebases.firstName','userpagebases.lastName','userpagebases.mobile','userpagebases.userName')
