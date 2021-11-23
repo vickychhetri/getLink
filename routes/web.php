@@ -39,7 +39,7 @@ Route::post('/dashboard', 'App\Http\Controllers\PageController@store');
 Route::post('/Edashboard', 'App\Http\Controllers\PageController@update');
 Route::post('/upload', 'App\Http\Controllers\PageController@upload');
 
-Route::post('/headerScript', 'App\Http\Controllers\HeaderfilesController@index');
+Route::get('/headerScript', 'App\Http\Controllers\HeaderfilesController@index');
 
 
 });
