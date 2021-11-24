@@ -51,6 +51,8 @@
                 @enderror
             </span>
         </div>
+        <br/>
+        <br/>
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <input type="submit" class="btn btn-success btn-block" value="Submit" />
         </div>
@@ -101,6 +103,8 @@
                 @enderror
             </span>
         </div>
+        <br/>
+        <br/>
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <input type="submit" class="btn btn-success btn-block" value="Submit" />
         </div>
