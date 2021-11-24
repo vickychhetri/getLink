@@ -14,7 +14,7 @@
 <div class="row" style="padding-top:50px;">
     <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 
-        <h2> Section - Add Page</h2>
+        <h2> PROFILE</h2>
         @if (session('message'))
         <div class="alert alert-success">
             {{ session('message') }}
@@ -65,7 +65,7 @@
     <div class="row" style="padding-top:50px;">
     <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 
-        <h2> Section - Add Page</h2>
+        <h2> PROFILE</h2>
         @if (session('message'))
         <div class="alert alert-success">
             {{ session('message') }}
@@ -74,7 +74,6 @@
  
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
             <p> First Name</p>
-            <input type="hidden" name="id" value="{{$data->id}}"/>
             <input type="text" name="fname" class="form-control"/>
  
             <span style="color:red;">
