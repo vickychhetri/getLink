@@ -42,7 +42,7 @@ Route::post('/upload', 'App\Http\Controllers\PageController@upload');
 Route::get('/headerScript', 'App\Http\Controllers\HeaderfilesController@index');
 Route::post('/headerScript', 'App\Http\Controllers\HeaderfilesController@store');
 Route::post('/EheaderScript', 'App\Http\Controllers\HeaderfilesController@update');
-
+Route::get('/Profile', 'App\Http\Controllers\Profileupdate@index');
 
 });
 
