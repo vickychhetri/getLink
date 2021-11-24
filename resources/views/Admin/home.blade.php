@@ -13,7 +13,7 @@
 <div class="row" style="padding-top:50px;">
     <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 
-        <h2> Section - Add Page</h2>
+        <h2> Get Link Page Editor</h2>
         @if (session('message'))
         <div class="alert alert-success">
             {{ session('message') }}
