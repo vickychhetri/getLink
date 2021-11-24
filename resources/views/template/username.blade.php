@@ -27,7 +27,7 @@
 <meta name="author" content="{{$pageData[0]->firstName}} {{$pageData[0]->lastName}}">
 <meta name="og:phone_number" content="{{$pageData[0]->mobile}}"/>
  
-@if(isset($headers))
+@if(isset($headers[0]))
 {!! $headers[0]->headerScript !!}
 @endif
 @endsection
@@ -44,7 +44,7 @@
 
 @section('footerScript')
 
-@if(isset($headers)) 
+@if(isset($headers[0])) 
 {!!$headers[0]->footerScript!!}
 @endif
 
