@@ -13,7 +13,7 @@
 <div class="row" style="padding-top:50px;">
     <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 
-        <center> <h2 style="font-weight: bold;"> getlink.page/username</h2> </center>
+        <center> <h2 style="font-weight: bold;"> WORKSPACE</h2> </center>
         @if (session('message'))
         <div class="alert alert-success">
             {{ session('message') }}
