@@ -71,7 +71,7 @@
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="/Admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    <img src="/images/user/sample_user.png" class="img-circle" alt="User Profile Image" />
                     <p>
                     {{session()->get('firstname') }}  {{session()->get('lastname') }}
                       <small> {{session()->get('created_at') }}</small>
@@ -111,7 +111,7 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="/Admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="/images/user/sample_user.png" class="img-circle" alt="get link User image" />
             </div>
             <div class="pull-left info">
               <p>  <a href="https://getlink.page/{{session()->get('username')}}" target="_blank"> {{session()->get('username') }} </a> </p>
