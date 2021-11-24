@@ -65,7 +65,7 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="/Admin/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                  <img src="/images/user/sample_user.png" class="user-image" alt="User Profile"/>
                   <span class="hidden-xs"> {{session()->get('username') }}</span>
                 </a>
                 <ul class="dropdown-menu">
