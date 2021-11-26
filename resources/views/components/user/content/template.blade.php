@@ -5,7 +5,7 @@
                   <div class="col-lg-11 text-center mx-auto col-12">
 
                       <div class="col-lg-8 mx-auto">
-                        <h3>getlink.page/username</h3>
+                        <h3>urprofile.in/username</h3>
                       </div>
 
                       <div class="owl-carousel owl-theme">
