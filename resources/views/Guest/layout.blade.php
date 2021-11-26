@@ -4,10 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Social connection + Personal websites.">
+    <title> @yield('title')</title>
+    <meta name="description"
+        content="Building a successful web connection is a challenge. you will get a link from us to manage your portfolio and social connection.">
+    <meta name="keywords"
+        content="your profile, urprofile, profile, bio link,bio,social media, instagram, facebook, fb, Linkedin, twitter,snapchat,biolink,">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
     <meta name="author" content="Vicky Chhetri">
 
-    <title> @yield('title')</title>
+    <meta name="category" content="Bio Link">
+    <meta name="url" content="https://urprofile.in">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="subject" content="Social Connection">
+
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/unicons.css">
@@ -19,14 +32,17 @@
     @section("metaContainer")
     @show
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QMGC9E0BXM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMGC9E0BXM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-QMGC9E0BXM');
-</script>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QMGC9E0BXM');
+    </script>
 
 </head>
 

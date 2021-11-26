@@ -1,5 +1,5 @@
 @extends('Guest.layout')
-@section('title','Officially GetLink.Page Website')
+@section('title','Login')
 @section('metaheadercontainer')
 @endsection
 

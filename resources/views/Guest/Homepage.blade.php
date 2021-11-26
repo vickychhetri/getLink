@@ -1,5 +1,5 @@
 @extends('Guest.layout')
-@section('title','Officially GetLink.Page Website')
+@section('title','India Officially Bio-Link Platform | Social Media')
 @section('metaheadercontainer')
 @endsection
 
