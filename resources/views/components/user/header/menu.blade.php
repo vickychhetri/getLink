@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="/"><i class='uil uil-user'></i> GetLink.Page</a>
+            <a class="navbar-brand" href="/"><i class='uil uil-user'></i> urprofile.in</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
