@@ -14,16 +14,16 @@
 -webkit-box-shadow: -3px 0px 79px -1px rgba(0,0,0,0.75);
 -moz-box-shadow: -3px 0px 79px -1px rgba(0,0,0,0.75);padding:5%;background-color:white;">
 <center>
-    <h3> GetLink.Page</h3>
+    <h3> urprofile.in</h3>
 </center>
                 <p style="text-align:justify;">
-                    Welcome to getlink.page, your number one source for Bio Link or web link.
+                    Welcome to urprofile.in, your number one source for Bio Link or web link.
                     We're dedicated to giving you
                     the very best of Service and uptime, with a focus on
                     User Experience, Reliability & Usability.
                 </p>
                 <p style="text-align:justify;">
-                    Founded in 2021 by Vicky Chhetri, getlink.page has been started recently after lockdown.
+                    Founded in 2021 by Vicky Chhetri, urprofile.in has been started recently after lockdown.
                     When Vicky Chhetri first started out, his passion for
                     web development
                     drove them to do research, so that he can offer you the
