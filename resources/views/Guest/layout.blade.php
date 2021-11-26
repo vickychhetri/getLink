@@ -14,7 +14,6 @@
     <meta name="language" content="English">
     <meta name="revisit-after" content="1 days">
     <meta name="author" content="Vicky Chhetri">
-
     <meta name="category" content="Bio Link">
     <meta name="url" content="https://urprofile.in">
     <meta name="coverage" content="Worldwide">
@@ -22,10 +21,37 @@
     <meta name="subject" content="Social Connection">
 
 
+    <!-- Primary Meta Tags -->
+    <meta name="description"
+        content="Building a successful web connection is a challenge. you will get a link from us to manage your portfolio and social connection.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://urprofile.in/">
+    <meta property="og:description"
+        content="Building a successful web connection is a challenge. you will get a link from us to manage your portfolio and social connection.">
+    <meta property="og:image" content="https://urprofile.in/images/meta/social.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://urprofile.in/">
+    <meta property="twitter:description"
+        content="Building a successful web connection is a challenge. you will get a link from us to manage your portfolio and social connection.">
+    <meta property="twitter:image" content="https://urprofile.in/images/meta/social.png">
+
+
+
+    <!-- Favicons -->
+    <link href="https://urprofile.in/images/meta/social.png" rel="icon">
+    <link href="https://urprofile.in/images/meta/social.png" rel="apple-touch-icon">
+
+
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/unicons.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
+
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="/css/tooplate-style.css">
