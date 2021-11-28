@@ -51,7 +51,7 @@
     <div class="wrapper">
       <header class="main-header">
         <!-- Logo -->
-        <a href="/dashboard" class="logo"><b>GetLink</b>.Page</a>
+        <a href="/dashboard" class="logo"><b>urprofile</b>.in</a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
