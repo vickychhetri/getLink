@@ -191,9 +191,10 @@
 @endsection
 
 @section('footercontainer')
-<script src="https://cdn.tiny.cloud/1/0nj8pmqfaosicobgrfr3hxgklq00xrjmm5awxk07vguu1qf5/tinymce/5/tinymce.min.js"
-    referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/9j46gd19vo1g8dl5xswub71v5zkwhxzzz0wxj56m2iao52kt/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
 <script>
+    
 tinymce.init({
     selector: '#mytextareaboxadminsection',
     plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
