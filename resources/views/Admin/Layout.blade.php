@@ -114,7 +114,7 @@
               <img src="/images/user/sample_user.png" class="img-circle" alt="get link User image" />
             </div>
             <div class="pull-left info">
-              <p>  <a href="https://getlink.page/{{session()->get('username')}}" target="_blank"> {{session()->get('username') }} </a> </p>
+              <p>  <a href="https://urprofile.in/{{session()->get('username')}}" target="_blank"> {{session()->get('username') }} </a> </p>
 
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
@@ -280,7 +280,7 @@
             <small>Control panel</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="/dashboard"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active">Dashboard</li>
           </ol>
         </section>
@@ -293,7 +293,7 @@
         <div class="pull-right hidden-xs">
           <b>Version</b> 0.0.1
         </div>
-        <strong>Copyright &copy; 2021-2022 <a href="https://getlink.page">GetLink.Page</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2021-2022 <a href="https://urprofile.in">urprofile.in</a>.</strong> All rights reserved.
       </footer>
     </div><!-- ./wrapper -->
 
