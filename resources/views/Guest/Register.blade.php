@@ -211,8 +211,8 @@ function validatephone(phone) {
 }
 // validates text only
 function Validate(txt) {
-    txt.value = txt.value.replace(/[^a-zA-Z-'\n\r.]+/g, '');
-}
+    txt.value = txt.value.replace(/[^a-zA-Z0-9-'\n\r.]+/g, '');
+}/^[a-zA-Z0-9]+$/
 // validate email
 function email_validate(email) {
     var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
