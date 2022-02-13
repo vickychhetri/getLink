@@ -95,6 +95,9 @@ class PageController extends Controller
 
      public function upload(Request $request){
         // $fileName=$request->file('file')->getClientOriginalName();
+        $v= new PageController();
+        $UploadPossible=$v->ValidateUploading();
+        if($UploadPossible){
         $fileName="edi".rand().'-'.time().'.'.$request->file('file')->extension();
         $path=$request->file('file')->storeAs('uploads', $fileName, 'public');
         if($path){
@@ -105,13 +108,30 @@ class PageController extends Controller
             $reDbms->userId = $userID;
             $reDbms->SAVE();
         }
+    
         return response()->json(['location'=>"/storage/$path"]); 
-        
+    }    
         /*$imgpath = request()->file('file')->store('uploads', 'public'); 
         return response()->json(['location' => "/storage/$imgpath"]);*/
-
+        return null;
     }
     
+    public function NumberOfImageUploded(){
+        $agent = new Usersession;
+        $userID = $agent->getSessionId();   
+        $images=Imagecollection::where('userId','=',$userID)->get();
+        return $images->count();
+    }
+    public function ValidateUploading(){
+        $size=env("MAXIMAGEUPLOAF");
+        $v= new PageController();
+        $currentSize=$v->NumberOfImageUploded();
+        if($currentSize<=$size){
+            return true;
+        }
+        return false;
+    }
+
     /**
      * Display the specified resource.
      *
