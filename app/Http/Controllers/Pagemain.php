@@ -23,10 +23,14 @@ class Pagemain extends Controller
         ->select('pages.*', 'userpagebases.firstName','userpagebases.lastName','userpagebases.mobile','userpagebases.userName')
         ->where('userpagebases.userName', '=', $username)
         ->get();
-        return view('template.username')
-        ->with('pageData',$usernamePage)
-        ->with('headers',$HFScrpts);
-        
+        if(isset($usernamePage)){
+            return view('template.username')
+            ->with('pageData',$usernamePage)
+            ->with('headers',$HFScrpts);    
+        }else {
+            return view('template.blank');
+        }
+       
     }catch(Exception $e){
 
     }
