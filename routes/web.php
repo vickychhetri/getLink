@@ -44,6 +44,8 @@ Route::post('/headerScript', 'App\Http\Controllers\HeaderfilesController@store')
 Route::post('/EheaderScript', 'App\Http\Controllers\HeaderfilesController@update');
 Route::get('/Profile', 'App\Http\Controllers\Profileupdate@index');
 
+Route::get('/User/Images', 'App\Http\Controllers\Profileupdate@all_images');
+
 });
 
 Route::get('/{pagename}','App\Http\Controllers\Pagemain@show');

@@ -142,7 +142,11 @@
               <a href="/headerScript">
                 <i class="fa fa-dashboard"></i> <span> Header & Footer </span></i>
               </a>
-           
+            </li>
+            <li class="active">
+              <a href="/User/Images">
+                <i class="fa fa-dashboard"></i> <span> Photos </span></i>
+              </a>
             </li>
 <!--             
             <li class="treeview">
