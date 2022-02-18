@@ -24,9 +24,14 @@ class Pagemain extends Controller
         ->where('userpagebases.userName', '=', $username)
         ->get();
         if(isset($usernamePage)){
-            return view('template.username')
-            ->with('pageData',$usernamePage)
-            ->with('headers',$HFScrpts);    
+            if($usernamePage->count()>0){
+                return view('template.username')
+                ->with('pageData',$usernamePage)
+                ->with('headers',$HFScrpts);  
+            }else {
+                return view('template.blank');     
+            }
+            
         }else {
             return view('template.blank');
         }
