@@ -6,11 +6,17 @@
 
 @endsection
 @section("container")
+@foreach($IMAGES as $photo)
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="/uploads/{{$photo->images}}" style="max-width:100%;max-height:100%;"/>
 
- 
-@endif
-    
-
+        </div>
+    </div>
+</div>
+@endforeach
+  
 @endsection
 
 @section('footercontainer')
