@@ -143,11 +143,11 @@
                 <i class="fa fa-dashboard"></i> <span> Header & Footer </span></i>
               </a>
             </li>
-            <li class="active">
+            <!-- <li class="active">
               <a href="/User/Images">
                 <i class="fa fa-dashboard"></i> <span> Photos </span></i>
               </a>
-            </li>
+            </li> -->
 <!--             
             <li class="treeview">
               <a href="#">
