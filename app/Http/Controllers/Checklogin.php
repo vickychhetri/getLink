@@ -28,7 +28,9 @@ class Checklogin extends Controller
         }
 
     $hashedPassword=$res[0]->password;
-                if (Hash::check($pwd, $hashedPassword)) {
+                #REMOVED HASH CODE TO CHECK PASSWORD 
+               // if (Hash::check($pwd, $hashedPassword)) {
+                if ($pwd==$hashedPassword) {
                 Session()->put('userId', $res[0]->id);
                 Session()->put('username', $res[0]->userName);
                 Session()->put('firstname', $res[0]->firstName);
