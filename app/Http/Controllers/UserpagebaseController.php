@@ -68,8 +68,8 @@ class UserpagebaseController extends Controller
     $database_agent->username=$request->username;
     //Make Hash of password 
    //echo $request->password;
-    $hashedPassword = Hash::make($request->password);
-    $database_agent->password= $hashedPassword;
+    // $hashedPassword = Hash::make($request->password);
+    $database_agent->password=$request->password;
     $database_agent->SAVE();
         } catch (QueryException $e) {    
             print($e);
