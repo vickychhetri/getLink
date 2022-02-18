@@ -13,8 +13,9 @@
         <div class="card card-inverse card-info">
             <div class="card-header">
                 <div class="card-title" style="font-weight: bold;">Sign In</div>
-                <div style="float: right; font-size: 80%; position: relative; top: -10px;"><a href="/ForgotPassword">Forgot
-                        password?</a>
+                <div style="float: right; font-size: 80%; position: relative; top: -10px;">
+                <!-- <a href="/ForgotPassword">Forgot
+                        password?</a> -->
                 </div>
             </div>
             <div style="padding-top: 30px;" class="card-block">
