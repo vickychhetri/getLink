@@ -258,12 +258,13 @@ url: "/Checkusername/validation",
 data:{'id':$("#usernameIT").val()},
 type: "get",
 success: function(response){ 
-    if(response=='1'){
+    if(response['msg']==1){
         $("#user-availability-status").text('Available'); 
-    }else {
+    }else if(response=0) {
         $("#user-availability-status").text('Already Taken, Sorry Not Available.'); 
     }
-    console.log(response);
+    console.log(response['msg']);
+    console.log(response[0]['msg']);
 },
 error:function (){}
 });
