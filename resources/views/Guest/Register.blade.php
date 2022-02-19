@@ -259,9 +259,9 @@ data:{id:$("#usernameIT").val()},
 type: "get",
 success: function(fdata){ 
 // $("#user-availability-status").html(fdata); 
-// console.log(fdata);
-var myObj = $.parseJSON(fdata);
-            console.log(myObj[0]["msg"]);
+// console.log(fdata);//
+// var myObj = $.parseJSON(fdata);
+    console.log(fdata[0]["msg"]);
 },
 error:function (){}
 });
