@@ -260,7 +260,7 @@ type: "get",
 success: function(response){ 
     if(response['msg']==1){
         $("#user-availability-status").text('Available'); 
-    }else if(response=0) {
+    }else if(response['msg']==0) {
         $("#user-availability-status").text('Already Taken, Sorry Not Available.'); 
     }
   
