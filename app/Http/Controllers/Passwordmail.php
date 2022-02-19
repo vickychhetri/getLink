@@ -18,7 +18,7 @@ class Passwordmail extends Controller
     // }
     public function sendEmailReminder() {
         $data = array('name'=>"Vicky Chhetri");
-        Mail::send('mail', $data, function($message) {
+        Mail::send('Guest.mail', $data, function($message) {
            $message->to('vickychhetri4@gmail.com', 'Tutorials Point')->subject
               ('Laravel HTML Testing Mail');
            $message->from('password-recovery@urprofile.in','Virat Gandhi');
