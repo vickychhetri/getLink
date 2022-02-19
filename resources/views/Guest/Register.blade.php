@@ -260,8 +260,8 @@ url: "/Checkusername/validation",
 data:{id:usrnameToSend},
 type: "get",
 success:function(data){
-$("#user-availability-status").html(data);
-$("#user-availability-status").text("testing");
+// $("#user-availability-status").html(data);
+$("#user-availability-status").text(Data);
 console.log(data);
 },
 error:function (){}
