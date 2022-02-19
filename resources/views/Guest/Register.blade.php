@@ -107,7 +107,7 @@ span.req {
                         <label for="username"><span class="req">* </span> User name: <small>This will be your login user
                                 name</small> </label>
                         <input class="form-control" type="text" 
-                        name="username"   id="username" onBlur="checkAvailability()"
+                        name="username"   id="usernameIT" onBlur="checkAvailability()"
                          onkeyup="Validate(this)"
                             placeholder="minimum 6 letters" required />
                         <div id="errLast"></div>
@@ -253,10 +253,11 @@ function add_validate(address) {
 
 //ajax username 
 function checkAvailability() {
+    alert($("#usernameIT").val());
 $("#loaderIcon").show();
 jQuery.ajax({
 url: "/Checkusername/validation",
-data:['username='+$("#username").val(), '_token =  {{csrf_token()}}'],
+data:['username='+$("#usernameIT").val(), '_token =  {{csrf_token()}}'],
 type: "get",
 success:function(data){
 $("#user-availability-status").html(data);
