@@ -46,7 +46,7 @@ Route::get('/Profile', 'App\Http\Controllers\Profileupdate@index');
 
 Route::get('/User/Images', 'App\Http\Controllers\Profileupdate@all_images');
 Route::get('/User/Delete/Image/{id}', 'App\Http\Controllers\Profileupdate@delete_image');
-Route::post('/Checkusername/validation','App\Http\Controllers\Uservalidajax@index');
+Route::get('/Checkusername/validation','App\Http\Controllers\Uservalidajax@index');
 });
 
 Route::get('/{pagename}','App\Http\Controllers\Pagemain@show');
