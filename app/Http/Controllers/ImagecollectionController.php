@@ -80,6 +80,6 @@ class ImagecollectionController extends Controller
      */
     public function destroy(Imagecollection $imagecollection)
     {
-        //
+        
     }
 }

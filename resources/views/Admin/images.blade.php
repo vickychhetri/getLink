@@ -12,7 +12,7 @@
 
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding: 16px;border:1px solid black;">
             <img src="/storage/{{$photo->images}}" style="max-width:100%;max-height:100%; height:250px;width:250px;" />
-           <center>  <a href="#" class="btn btn-danger"> Delete </a> </center>
+           <center>  <a href="/User/Delete/Image/{{$photo->id}}" class="btn btn-danger"> Delete </a> </center>
         </div>
 
         @endforeach

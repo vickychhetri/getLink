@@ -18,4 +18,16 @@ class Profileupdate extends Controller
         return view('Admin.images')
         ->with('IMAGES',$images);
     }
+    public function delete_image($id)
+    {
+        $agent = new Usersession;
+        $userID = $agent->getSessionId(); 
+        $images=Imagecollection::where('id','=',$id)->get()->first();
+        
+        if($userID==$images->userId)
+        $user = Imagecollection::find($id); $user->delete();
+
+        return redirect()->back();
+
+    }
 }
