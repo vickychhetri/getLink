@@ -112,7 +112,7 @@ span.req {
                             placeholder="minimum 6 letters" required />
                         <div id="errLast"></div>
                         <span id="user-availability-status"></span>
-                        <p><img src="LoaderIcon.gif" id="loaderIcon" style="display:none" /></p>
+                        
                         <span style="color:red;">
                             @error('username')
                             {{$message}}
@@ -261,7 +261,6 @@ data:{id:usrnameToSend},
 type: "get",
 success:function(data){
 $("#user-availability-status").html(data);
-$("#loaderIcon").hide();
 console.log(data);
 },
 error:function (){}
