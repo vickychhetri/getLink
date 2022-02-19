@@ -24,9 +24,12 @@ class Profileupdate extends Controller
         $userID = $agent->getSessionId(); 
         $images=Imagecollection::where('id','=',$id)->get()->first();
         
-        if($userID==$images->userId)
-        $user = Imagecollection::find($id); $user->delete();
-
+        if($userID==$images->userId){
+            unlink("/storage/".$images->images);
+            $user = Imagecollection::find($id); $user->delete();
+            
+        }
+    
         return redirect()->back();
 
     }
