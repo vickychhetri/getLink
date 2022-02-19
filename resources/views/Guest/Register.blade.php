@@ -38,7 +38,7 @@ span.req {
 <!-- MENU -->
 <x-User.Header.Menu />
 
-<div class="container-fluid" style="background: url(/images/img/17973908.jpg) no-repeat center center fixed; 
+<div class="container-fluid" style="background: url(/images/img/regbg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
