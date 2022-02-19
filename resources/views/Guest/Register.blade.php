@@ -102,12 +102,12 @@ span.req {
                             @enderror
                         </span>
                     </div>
-
+                    <!-- id=txt removed -->
                     <div class="form-group">
                         <label for="username"><span class="req">* </span> User name: <small>This will be your login user
                                 name</small> </label>
                         <input class="form-control" type="text" 
-                        name="username" id="txt" id="username" onBlur="checkAvailability()"
+                        name="username"   id="username" onBlur="checkAvailability()"
                          onkeyup="Validate(this)"
                             placeholder="minimum 6 letters" required />
                         <div id="errLast"></div>
