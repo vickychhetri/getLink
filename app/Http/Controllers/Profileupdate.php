@@ -25,7 +25,7 @@ class Profileupdate extends Controller
         $images=Imagecollection::where('id','=',$id)->get()->first();
         
         if($userID==$images->userId){
-            unlink("/storage/".$images->images);
+            unlink("/public/storage/".$images->images);
             $user = Imagecollection::find($id); $user->delete();
             
         }
