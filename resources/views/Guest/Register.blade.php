@@ -261,7 +261,7 @@ success: function(response){
 // $("#user-availability-status").html(fdata); 
 // console.log(fdata);//
 // var myObj = $.parseJSON(fdata);
-    console.log(response[0]);
+    console.log(response);
 },
 error:function (){}
 });
