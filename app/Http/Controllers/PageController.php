@@ -120,10 +120,14 @@ class PageController extends Controller
         $agent = new Usersession;
         $userID = $agent->getSessionId();   
         $images=Imagecollection::where('userId','=',$userID)->get();
+        if($images)
         return $images->count();
+        else 
+        return 0;
     }
     public function ValidateUploading(){
-        $size=env("MAXIMAGEUPLOAF");
+        // $size=env("MAXIMAGEUPLOAF");
+        $size=30;
         $v= new PageController();
         $currentSize=$v->NumberOfImageUploded();
         if($currentSize<=$size){
