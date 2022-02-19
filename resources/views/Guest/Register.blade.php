@@ -261,6 +261,7 @@ type: "get",
 success:function(data){
 $("#user-availability-status").html(data);
 $("#loaderIcon").hide();
+console.log(data);
 },
 error:function (){}
 });
