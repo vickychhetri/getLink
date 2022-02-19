@@ -252,7 +252,6 @@ function add_validate(address) {
 }
 
 //ajax username 
-$(document).ready(function(){
 function checkAvailability() {
 $.ajax({
 url: "/Checkusername/validation",
@@ -267,7 +266,7 @@ success: function(fdata){
 error:function (){}
 });
     }
-}
+
 </script>
 
 @show
