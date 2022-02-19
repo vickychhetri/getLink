@@ -11,7 +11,8 @@
         @foreach($IMAGES as $photo)
 
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <img src="/storage/{{$photo->images}}" style="max-width:100%;max-height:100%;" />
+            <img src="/storage/{{$photo->images}}" style="max-width:100%;max-height:100%; height:250px;width:250px;" />
+            <a href="#" class="btn btn-danger"> Delete </a>
         </div>
 
         @endforeach
