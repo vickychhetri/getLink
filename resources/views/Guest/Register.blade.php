@@ -106,9 +106,13 @@ span.req {
                     <div class="form-group">
                         <label for="username"><span class="req">* </span> User name: <small>This will be your login user
                                 name</small> </label>
-                        <input class="form-control" type="text" name="username" id="txt" onkeyup="Validate(this)"
+                        <input class="form-control" type="text" 
+                        name="username" id="txt" id="username" onBlur="checkAvailability()"
+                         onkeyup="Validate(this)"
                             placeholder="minimum 6 letters" required />
                         <div id="errLast"></div>
+                        <span id="user-availability-status"></span>
+                        <p><img src="LoaderIcon.gif" id="loaderIcon" style="display:none" /></p>
                         <span style="color:red;">
                             @error('username')
                             {{$message}}
@@ -245,6 +249,21 @@ function add_validate(address) {
     } else {
         document.getElementById("statusAdd").innerHTML = "<span class='valid'>Thanks, Address looks valid!</span>";
     }
+}
+
+//ajax username 
+function checkAvailability() {
+$("#loaderIcon").show();
+jQuery.ajax({
+url: "/Checkusername/validation",
+data:['username='+$("#username").val(), '_token = <?php echo csrf_token() ?>'],
+type: "POST",
+success:function(data){
+$("#user-availability-status").html(data);
+$("#loaderIcon").hide();
+},
+error:function (){}
+});
 }
 </script>
 
