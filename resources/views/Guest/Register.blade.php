@@ -259,9 +259,11 @@ jQuery.ajax({
 url: "/Checkusername/validation",
 data:{id:usrnameToSend},
 type: "get",
-success:function(fdata){
+
+success : function(fdata)
+{
 // $("#user-availability-status").html(data);
-$("#user-availability-status").text("testing");
+// $("#user-availability-status").text("testing");
 console.log(fdata);
 },
 error:function (){}
