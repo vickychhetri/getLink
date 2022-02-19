@@ -13,9 +13,9 @@ class Uservalidajax extends Controller
         
         if(isset($dataV)){
             if($dataV->count()>0){
-                return response()->json(array('msg'=> '0'), 200);
+                return response()->json('0', 200);
             }
         }
-        return response()->json(array('msg'=> '1'), 200);
+        return response()->json('1', 200);
      }
 }
