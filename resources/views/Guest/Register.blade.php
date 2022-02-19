@@ -262,7 +262,7 @@ type: "get",
 success:function(data){
 // $("#user-availability-status").html(data);
 // $("#user-availability-status").text(data);
-console.log(data);
+console.log(data['msg']);
 },
 error:function (){}
 });
