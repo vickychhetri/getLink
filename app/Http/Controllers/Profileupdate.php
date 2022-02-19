@@ -12,9 +12,9 @@ class Profileupdate extends Controller
     }
     public function all_images()
     {
-        $UserID=Session()->get('userId');
-        // echo $UserID;
-        $images=Imagecollection::where('id','=',$UserID)->get();
+        $agent = new Usersession;
+        $userID = $agent->getSessionId(); 
+        $images=Imagecollection::where('userId','=',$userID)->get();
         return view('Admin.images')
         ->with('IMAGES',$images);
     }
