@@ -13,6 +13,6 @@ class Uservalidajax extends Controller
                 return response()->json(array('msg'=> 'Not Available'), 200);
             }
         }
-        return response()->json(array('msg'=> $request->username), 200);
+        return response()->json(array('msg'=> $request), 200);
      }
 }
