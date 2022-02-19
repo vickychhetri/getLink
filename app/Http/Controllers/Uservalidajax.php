@@ -7,12 +7,15 @@ use App\Models\Userpagebase;
 class Uservalidajax extends Controller
 {
     public function index(Request $request) {
-        $data=Userpagebase::where('userName','=',$request->id)->get()->first();
-        if(isset($data)){
-            if($data->count()==1){
+        $dataV=Userpagebase::where('userName','=',$request->id)
+        ->get()
+        ->first();
+        
+        if(isset($dataV)){
+            if($dataV->count()>0){
                 return response()->json(array('msg'=> 'Not Available'), 200);
             }
         }
-        return response()->json(array('msg'=> $request->id), 200);
+        return response()->json(array('msg'=> 'Available '), 200);
      }
 }
