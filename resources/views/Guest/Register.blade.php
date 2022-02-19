@@ -263,8 +263,7 @@ success: function(response){
     }else if(response=0) {
         $("#user-availability-status").text('Already Taken, Sorry Not Available.'); 
     }
-    console.log(response['msg']);
-    console.log(response[0]['msg']);
+  
 },
 error:function (){}
 });
