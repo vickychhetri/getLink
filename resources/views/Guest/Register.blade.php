@@ -253,20 +253,13 @@ function add_validate(address) {
 
 //ajax username 
 function checkAvailability() {
-   var usrnameToSend=$("#usernameIT").val();
-$("#loaderIcon").show();
 jQuery.ajax({
 url: "/Checkusername/validation",
-data:{id:usrnameToSend},
+data:{id:$("#usernameIT").val()},
 type: "get",
-
-success : function(fdata)
-{
-// $("#user-availability-status").html(data);
-// $("#user-availability-status").text("testing");
-// console.log(fdata);
+success : function(fdata){ 
 $("#user-availability-status").html(fdata); 
-alert ( $("#user-availability-status").html() );
+console.log(fdata);
 },
 error:function (){}
 });
