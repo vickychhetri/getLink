@@ -265,7 +265,7 @@ success : function(fdata)
 // $("#user-availability-status").html(data);
 // $("#user-availability-status").text("testing");
 // console.log(fdata);
-$("#user-availability-status").html(data); 
+$("#user-availability-status").html(fdata); 
 alert ( $("#user-availability-status").html() );
 },
 error:function (){}
