@@ -253,11 +253,11 @@ function add_validate(address) {
 
 //ajax username 
 function checkAvailability() {
-    alert($("#usernameIT").val());
+   var usrnameToSend=$("#usernameIT").val();
 $("#loaderIcon").show();
 jQuery.ajax({
 url: "/Checkusername/validation",
-data:{username:+$("#usernameIT").val()},
+data:{id:usrnameToSend},
 type: "get",
 success:function(data){
 $("#user-availability-status").html(data);
