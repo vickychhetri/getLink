@@ -257,7 +257,7 @@ function checkAvailability() {
 $("#loaderIcon").show();
 jQuery.ajax({
 url: "/Checkusername/validation",
-data:['username='+$("#usernameIT").val(), '_token =  {{csrf_token()}}'],
+data:{username:+$("#usernameIT").val()},
 type: "get",
 success:function(data){
 $("#user-availability-status").html(data);
