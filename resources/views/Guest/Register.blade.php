@@ -261,7 +261,7 @@ data:{id:usrnameToSend},
 type: "get",
 success:function(data){
 // $("#user-availability-status").html(data);
-$("#user-availability-status").text(data);
+// $("#user-availability-status").text(data);
 console.log(data);
 },
 error:function (){}
