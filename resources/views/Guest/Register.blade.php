@@ -253,13 +253,15 @@ function add_validate(address) {
 
 //ajax username 
 function checkAvailability() {
-jQuery.ajax({
+$.ajax({
 url: "/Checkusername/validation",
 data:{id:$("#usernameIT").val()},
 type: "get",
-success : function(fdata){ 
-$("#user-availability-status").html(fdata); 
-console.log(fdata);
+success: function(fdata){ 
+// $("#user-availability-status").html(fdata); 
+// console.log(fdata);
+var myObj = $.parseJSON(fdata);
+            console.log(myObj[0]["msg"]);
 },
 error:function (){}
 });
