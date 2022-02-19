@@ -259,10 +259,10 @@ jQuery.ajax({
 url: "/Checkusername/validation",
 data:{id:usrnameToSend},
 type: "get",
-success:function(data){
+success:function(fdata){
 // $("#user-availability-status").html(data);
 $("#user-availability-status").text("testing");
-console.log(data);
+console.log(fdata);
 },
 error:function (){}
 });
