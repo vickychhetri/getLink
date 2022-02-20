@@ -3,8 +3,8 @@
 <head>
     <title>urProfile.in | Login Information</title>
 <style>
-    p{
-        padding: 10px;
+    .pcolor{
+        padding: 16px;
         background-color: #00aaff;
         color: white;
     }
@@ -18,11 +18,11 @@
     <p>Email: {{ $details['email'] }}</p> 
     <p>Mobile: {{ $details['mobile'] }}</p>
 
-    <h2> <a href="https://urprofile.in/Login" target="_blank"> Login Now </a> </h2>
-    
+    <h2> <a href="https://urprofile.in/Login" target="_blank"> Click Here to Login </a>  </h2>
+    <i> you will be redirected to the urprofile login page.</i>
     <strong> 
-    <p>Username(login): {{ $details['username'] }}</p>
-    <p>Password{{ $details['password'] }}</p>
+    <p class="pcolor">Username(login): {{ $details['username'] }}</p>
+    <p class="pcolor">Password{{ $details['password'] }}</p>
     </strong>
     <br/><br/>
    
