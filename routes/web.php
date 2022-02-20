@@ -51,7 +51,7 @@ Route::get('/User/Delete/Image/{id}', 'App\Http\Controllers\Profileupdate@delete
 Route::get('/Checkusername/validation','App\Http\Controllers\Uservalidajax@index');
 // Route::get('/Guest/ForgotPassword','App\Http\Controllers\Passwordmail@sendEmailReminder');
 
-Route::get('send-mail','App\Http\Controllers\Passwordmail@sendEmailReminder');
+// Route::get('send-mail','App\Http\Controllers\Passwordmail@sendEmailReminder');
 
 // Route::get('send-mail', function () {
 

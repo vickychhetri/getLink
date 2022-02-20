@@ -16,21 +16,21 @@ class Passwordmail extends Controller
     //         $m->to($user->email, $user->name)->subject('Welcome');
     //     });
     // }
-    public function sendEmailReminder() {
-   //      $data = array('name'=>"Vicky Chhetri");
-   //      Mail::send('Guest.mail', $data, function($message) {
-   //         $message->to('vickychhetri4@gmail.com', 'Tutorials Point')->subject
-   //            ('Laravel HTML Testing Mail');
-   //         $message->from('password-recovery@urprofile.in','Virat Gandhi');
-   //      });
-   //      echo "HTML Email Sent. Check your inbox.";
-   //   }
+    public function sendEmailReminder($email) { 
+      $user = Userpagebase::where('email','=',$email)->get()->first();
    $details = [
-      'title' => 'Mail from ItSolutionStuff.com',
-      'body' => 'This is for testing email using smtp'
+      'title' => 'urProfile.in | Login Information',
+      'body' => 'Login',
+      'username'=>$user->userName,
+      'password'=>$user->password,
+      'firstname'=>$user->firstName,
+      'lastname'=>$user->lastName,
+      'mobile'=>$user->mobile,
+      'email'=>$user->email
+
   ];
  
-  \Mail::to('vikedihost@gmail.com')->send(new \App\Mail\MyTestMail($details));
+  \Mail::to($email)->send(new \App\Mail\MyTestMail($details));
  
   dd("Email is Sent.");
 }

@@ -28,7 +28,7 @@ class MyTestMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Mail from ItSolutionStuff.com')
+        return $this->subject('urProfile.in | Login Information')
                     ->view('Guest.mail');
         // return $this->view('view.name');
     }

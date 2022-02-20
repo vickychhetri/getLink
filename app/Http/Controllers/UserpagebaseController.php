@@ -70,7 +70,11 @@ class UserpagebaseController extends Controller
    //echo $request->password;
     // $hashedPassword = Hash::make($request->password);
     $database_agent->password=$request->password;
-    $database_agent->SAVE();
+    $reslt=$database_agent->SAVE();
+    if($reslt){
+        $agen_Mail=new Passwordmail();
+        $agen_Mail->sendEmailReminder($request->email);
+    }
         } catch (QueryException $e) {    
             print($e);
     return redirect()->back()->with('Error', 'Error : Something went wrong  !');;
