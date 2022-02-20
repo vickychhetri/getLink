@@ -31,7 +31,7 @@ class Passwordmail extends Controller
   ];
  
   \Mail::to($email)->send(new \App\Mail\MyTestMail($details));
- 
+  dd($details);
   dd("Email is Sent.");
 }
 }
