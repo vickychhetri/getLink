@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Officially GetLink.Page Website</title>
+    <!-- <title>Officially GetLink.Page Website</title> -->
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/unicons.css">

@@ -1,5 +1,5 @@
 @extends('Guest.layout')
-@section('title','India Officially Bio-Link Platform | Social Media')
+@section('title','Platform to create customizable links to manage your portfolios and social connection | urProfile')
 @section('metaheadercontainer')
 @endsection
 
